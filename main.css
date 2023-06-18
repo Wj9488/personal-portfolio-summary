@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --app-black: #070707;
+    --app-white: #fafafa;
+}
+
+body {
+    background-color: #fafafa ;
+    font-family: "Inter", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+main {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 94vh;
+}
+.app__logo_container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    .app__logo {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+}
+.app__nav_container {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    .app__nav_container_return a {
+        color: var(--app-black);
+    }
+    .app__nav_container_cta {
+        padding: 8px 16px;
+        background-color: var(--app-black);
+        border-radius: 1.25rem;
+    }
+    .app__nav_container_cta a{
+        color: var(--app-white);
+    }
+}
+nav {
+    min-height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app__header_one {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--app-black);
+}
+.app__p_summary {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+    margin-top: 0.5rem;
+}
+section {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+.preloader {
+    font-size: 10rem;
+    padding-left: 2.5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -999;
+    color: var(--app-white);
+    font-weight: bold;
+    font-family: "Space Grotesk", "Helvetica Neue", sans-serif;
+}
+  
+
+@media screen and (max-width: 768px) {
+    body {
+    background-color: #fafafa ;
+    font-family: "Inter", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    }
+    main {
+        min-height: 94dvh;
+    }
+    section {
+        width: 100%;
+    }
+    .app__logo {
+        font-size: 0.875rem;
+    }
+    .app__logo_container {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    }
+    .app__nav_container {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    .app__nav_container_return a {
+        color: var(--app-black);
+        font-size: 0.875rem;
+    }
+    .app__nav_container_cta {
+        padding: 6px 12px;
+        background-color: var(--app-black);
+        border-radius: 1.25rem;
+    }
+    .app__nav_container_cta a{
+        color: var(--app-white);
+        font-size: 0.875rem;
+    }
+}
+}
